@@ -6,6 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserRegisterView">
             <connections>
+                <outlet property="txtApellidos" destination="qAs-mL-ptL" id="2os-Xb-VEd"/>
+                <outlet property="txtConfirmaPassword" destination="cMO-Pi-wnX" id="T2x-Wf-UBk"/>
+                <outlet property="txtCorreo" destination="ccf-Pa-pQG" id="VZd-e9-IfP"/>
+                <outlet property="txtNombre" destination="31h-Wy-807" id="rgv-pk-00r"/>
+                <outlet property="txtPassword" destination="QWr-jy-fFp" id="Dlk-ud-j8V"/>
+                <outlet property="txtTelefono" destination="zg6-AG-9gW" id="f73-bJ-umb"/>
+                <outlet property="txtUsuario" destination="Dm2-1d-wJU" id="xNh-Io-WMU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -75,7 +82,7 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWr-jy-fFp">
                     <rect key="frame" x="170" y="250" width="143" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31h-Wy-807">
                     <rect key="frame" x="170" y="94" width="143" height="30"/>
@@ -85,7 +92,7 @@
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cMO-Pi-wnX">
                     <rect key="frame" x="170" y="303" width="143" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccf-Pa-pQG">
                     <rect key="frame" x="170" y="356" width="143" height="30"/>
@@ -102,6 +109,9 @@
                     <state key="normal" title="Registrar usuario">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnRegistrarUsuario:" destination="-1" eventType="touchUpInside" id="ipu-bO-GFI"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
