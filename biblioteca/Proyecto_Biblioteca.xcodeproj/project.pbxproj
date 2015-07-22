@@ -21,6 +21,7 @@
 		9C14B5F81B5D849100743D92 /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14B5F61B5D849100743D92 /* DetailsView.xib */; };
 		9C14B5FC1B5D899200743D92 /* UserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14B5FA1B5D899200743D92 /* UserRegisterView.m */; };
 		9C14B5FD1B5D899200743D92 /* UserRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */; };
+		D084DDBD1B6045830041BDB3 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = D084DDBC1B6045830041BDB3 /* Connect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		9C14B5F91B5D899200743D92 /* UserRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegisterView.h; sourceTree = "<group>"; };
 		9C14B5FA1B5D899200743D92 /* UserRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegisterView.m; sourceTree = "<group>"; };
 		9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRegisterView.xib; sourceTree = "<group>"; };
+		D084DDBB1B6045830041BDB3 /* Connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect.h; sourceTree = "<group>"; };
+		D084DDBC1B6045830041BDB3 /* Connect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect.m; sourceTree = "<group>"; };
 		F2731CE2FB7F24D9A1E401EF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97F60254DE4D4300060727 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +114,7 @@
 		9C14B5C01B5D6CE200743D92 /* Proyecto_Biblioteca */ = {
 			isa = PBXGroup;
 			children = (
+				D084DDBA1B6045650041BDB3 /* Conect */,
 				9C14B5C51B5D6CE200743D92 /* AppDelegate.h */,
 				9C14B5C61B5D6CE200743D92 /* AppDelegate.m */,
 				9C14B5C81B5D6CE200743D92 /* ViewController.h */,
@@ -156,6 +160,15 @@
 				9C14B5DC1B5D6CE200743D92 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D084DDBA1B6045650041BDB3 /* Conect */ = {
+			isa = PBXGroup;
+			children = (
+				D084DDBB1B6045830041BDB3 /* Connect.h */,
+				D084DDBC1B6045830041BDB3 /* Connect.m */,
+			);
+			name = Conect;
 			sourceTree = "<group>";
 		};
 		E06B063F3D5BEEAB8C5269B8 /* Pods */ = {
@@ -305,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D084DDBD1B6045830041BDB3 /* Connect.m in Sources */,
 				9C14B5F71B5D849100743D92 /* DetailsView.m in Sources */,
 				9C14B5EF1B5D83DB00743D92 /* BookListViewViewController.m in Sources */,
 				9C14B5CA1B5D6CE200743D92 /* ViewController.m in Sources */,
