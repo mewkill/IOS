@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Connect : NSObject
+-(void)login:(NSString *)user password:(NSString *)pass con:(UIViewController *)con;
 
 @end
