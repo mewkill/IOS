@@ -34,4 +34,18 @@
 }
 */
 
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
+    return 5;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    
+  
+    
+    return 5;
+}
+
+
+
 @end

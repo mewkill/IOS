@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookListViewViewController : UIViewController
+@interface BookListViewViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+
+
+
+
 
 @end
