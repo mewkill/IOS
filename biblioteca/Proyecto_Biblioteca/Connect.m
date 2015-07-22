@@ -31,7 +31,7 @@
                                     
                                                             path:@"http://proyectobiblioteca.hol.es/validarUsuario.php"
                                     
-                                                      parameters:@{@"usuario":user,@"psw":pass}];
+                                                      parameters:@{@"usuario":user,@"contrasena":pass}];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
