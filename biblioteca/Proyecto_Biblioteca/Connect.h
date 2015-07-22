@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Connect : NSObject
--(void)login:(NSString *)user password:(NSString *)pass con:(UIViewController *)con;
+
+//-(void)login:(NSString *)user password:(NSString *)pass con:(UIViewController *)con;
+
+-(void) login:(NSString *)user password:(NSString *)pass conecta:(UIViewController *)con;
 
 @end

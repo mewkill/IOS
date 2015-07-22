@@ -30,11 +30,16 @@
         
         UIAlertView *camposVacios=[[UIAlertView alloc]initWithTitle:@"Error" message:@"Debes completar la informacion" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [camposVacios show];
-        Connect *conectarWebService=[[Connect alloc] init];
         
-        [conectarWebService login:_txtUsuario.text password:_txtPassword.text con:self ];
+        
         
     }
+    else{
+        Connect *conectarWebService=[[Connect alloc] init];
+
+        [conectarWebService login:_txtUsuario.text password:_txtPassword.text conecta:self];
+    }
+    
     
     
 }

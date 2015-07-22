@@ -14,7 +14,7 @@
 @implementation Connect
 
 
--(void)login:(NSString *)user password:(NSString *)pass con:(UIViewController *)con
+-(void)login:(NSString *)user password:(NSString *)pass conecta:(UIViewController *)con
 
 {
     
