@@ -15,4 +15,6 @@
 
 -(void) login:(NSString *)user password:(NSString *)pass conecta:(UIViewController *)con;
 
+-(void)GetListOfBook;
+
 @end

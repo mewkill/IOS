@@ -78,14 +78,10 @@
                 [con.navigationController pushViewController:bookListView animated:YES];
                 
                 NSLog(@"Entra admin");
-                
             }
-            
-            
-            
+          
         }
-        
-        
+ 
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
@@ -96,7 +92,48 @@
     }];
     
     [operation start];
+
     
+}
+//metodo para obtener el Json
+-(void)GetListOfBook{
+    
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://proyectobiblioteca.hol.es/"]];
+    
+    [httpClient setParameterEncoding:AFFormURLParameterEncoding];
+    
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
+                                    
+                                                            path:@"http://proyectobiblioteca.hol.es/verLibros.php"
+                                    
+                                                      parameters:@{}];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        //Mensaje en consola
+        
+        NSLog(@"Response: %@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+        
+        
+        ////
+        NSError *jsonError = nil;
+        NSArray *jsonArray = (NSArray *)[NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:&jsonError];
+        
+     
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"Error: %@", error);
+        
+        //regresa un erro ;
+        
+    }];
+    
+    [operation start];
     
     
 }
