@@ -77,11 +77,31 @@
                     <connections>
                         <outlet property="txtPassword" destination="vfR-7f-3bL" id="OUp-qG-MYH"/>
                         <outlet property="txtUsuario" destination="vUI-jl-c2u" id="KUN-kD-mlJ"/>
+                        <segue destination="7G8-aH-oJf" kind="push" id="Apk-RJ-Gk1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947" y="321"/>
+        </scene>
+        <!--Book List View View Controller-->
+        <scene sceneID="kqM-zV-Wmz">
+            <objects>
+                <viewController id="7G8-aH-oJf" customClass="BookListViewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LXG-LX-y36"/>
+                        <viewControllerLayoutGuide type="bottom" id="wJ4-hw-PhD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EM5-Jd-hos">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Rx-f2-31k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pqq-vl-uhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669" y="321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CGU-C0-nhM">
