@@ -1,5 +1,5 @@
 //
-//  BookListViewViewController.h
+//  AppDelegate.h
 //  Proyecto_Biblioteca
 //
 //  Created by JALOPEZ on 20/07/15.
@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookListViewViewController : UIViewController<UITableView
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
 
-
-
-//-(void)conexion(){}
 
 @end
+

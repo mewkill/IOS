@@ -1,5 +1,5 @@
 //
-//  BookListViewViewController.h
+//  LoginView.h
 //  Proyecto_Biblioteca
 //
 //  Created by JALOPEZ on 20/07/15.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookListViewViewController : UIViewController<UITableView
-
-
-
-
-//-(void)conexion(){}
+@interface LoginView : UITableViewCell
 
 @end
