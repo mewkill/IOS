@@ -35,7 +35,7 @@
 */
 
 - (IBAction)btnRegistrarUsuario:(UIButton *)sender {
-    if ([_txtNombre.text isEqualToString:@""]||[_txtApellidos.text isEqualToString:@""]||[_txtUsuario.text isEqualToString:@""]||[_txtPassword.text isEqualToString:@""]||[_txtConfirmaPassword.text isEqualToString:@""]||[_txtCorreo.text isEqualToString:@""]||[_txtTelefono.text isEqualToString:@""])
+    if ([_txtNombre.text isEqualToString:@""]||[_txtUsuario.text isEqualToString:@""]||[_txtPassword.text isEqualToString:@""]||[_txtConfirmaPassword.text isEqualToString:@""]||[_txtCorreo.text isEqualToString:@""]||[_txtTelefono.text isEqualToString:@""])
     {
         
         UIAlertView *camposVacios=[[UIAlertView alloc]initWithTitle:@"Error" message:@"Debes completar la informacion" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
