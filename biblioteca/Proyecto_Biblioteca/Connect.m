@@ -70,6 +70,7 @@
                 NSLog(@"Entra admin");
             }
             
+
             UIAlertView *camposIncorrectos=[[UIAlertView alloc]initWithTitle:@"Error" message:@"Usuario y/o password incorrectos" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [camposIncorrectos show];
             
@@ -198,6 +199,59 @@
     [operation start];
     
 }
+
+
+
+
+-(void)registraLibros:(NSString *)titulo editorial:(NSString *)editorial clasificacion:(NSString *)clasificacion autor:(NSString*)autor paginas:(NSString*)paginas existencias:(NSString*)existencias descripcion:(NSString*)descripcion imagen:(NSString*)imagen{
+    
+    
+    
+    AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://proyectobiblioteca.hol.es"]];
+    
+    [httpClient setParameterEncoding:AFFormURLParameterEncoding];
+    
+    NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
+                                    
+                                                            path:@"http://proyectobiblioteca.hol.es/registroLibro.php"
+                                                          parameters:@{@"titulo":titulo,@"editorial":editorial,@"clasificacion":clasificacion,@"autor":autor,@"paginas":paginas,@"existencias":existencias,@"descripcion":descripcion,@"imagen":imagen}];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        // Print the response body in text
+        
+        NSLog(@"Response: %@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+        
+        
+        
+        if([[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding] isEqualToString:@"registrado"]){
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"Error: %@", error);       
+        
+        
+        
+        
+    }];
+    
+    [operation start];
+    
+}
+
 
 
 @end

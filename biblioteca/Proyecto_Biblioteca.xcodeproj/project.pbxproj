@@ -20,6 +20,8 @@
 		9C14B5F81B5D849100743D92 /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14B5F61B5D849100743D92 /* DetailsView.xib */; };
 		9C14B5FC1B5D899200743D92 /* UserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14B5FA1B5D899200743D92 /* UserRegisterView.m */; };
 		9C14B5FD1B5D899200743D92 /* UserRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */; };
+		9C5A68BB1B6195DF006709BE /* BookRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A68B91B6195DF006709BE /* BookRegisterView.m */; };
+		9C5A68BC1B6195DF006709BE /* BookRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A68BA1B6195DF006709BE /* BookRegisterView.xib */; };
 		D084DDBD1B6045830041BDB3 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = D084DDBC1B6045830041BDB3 /* Connect.m */; };
 		D084DE0A1B61A6DF0041BDB3 /* ModeloLibro.m in Sources */ = {isa = PBXBuildFile; fileRef = D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,9 @@
 		9C14B5F91B5D899200743D92 /* UserRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegisterView.h; sourceTree = "<group>"; };
 		9C14B5FA1B5D899200743D92 /* UserRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegisterView.m; sourceTree = "<group>"; };
 		9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRegisterView.xib; sourceTree = "<group>"; };
+		9C5A68B81B6195DF006709BE /* BookRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookRegisterView.h; sourceTree = "<group>"; };
+		9C5A68B91B6195DF006709BE /* BookRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookRegisterView.m; sourceTree = "<group>"; };
+		9C5A68BA1B6195DF006709BE /* BookRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookRegisterView.xib; sourceTree = "<group>"; };
 		D084DDBB1B6045830041BDB3 /* Connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect.h; sourceTree = "<group>"; };
 		D084DDBC1B6045830041BDB3 /* Connect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect.m; sourceTree = "<group>"; };
 		D084DE081B61A6DF0041BDB3 /* ModeloLibro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeloLibro.h; sourceTree = "<group>"; };
@@ -132,8 +137,14 @@
 				9C14B5F91B5D899200743D92 /* UserRegisterView.h */,
 				9C14B5FA1B5D899200743D92 /* UserRegisterView.m */,
 				9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */,
+<<<<<<< HEAD
+				9C5A68B81B6195DF006709BE /* BookRegisterView.h */,
+				9C5A68B91B6195DF006709BE /* BookRegisterView.m */,
+				9C5A68BA1B6195DF006709BE /* BookRegisterView.xib */,
+=======
 				D084DE081B61A6DF0041BDB3 /* ModeloLibro.h */,
 				D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */,
+>>>>>>> origin/master
 			);
 			path = Proyecto_Biblioteca;
 			sourceTree = "<group>";
@@ -268,6 +279,7 @@
 				9C14B5D21B5D6CE200743D92 /* LaunchScreen.xib in Resources */,
 				9C14B5CF1B5D6CE200743D92 /* Images.xcassets in Resources */,
 				9C14B5FD1B5D899200743D92 /* UserRegisterView.xib in Resources */,
+				9C5A68BC1B6195DF006709BE /* BookRegisterView.xib in Resources */,
 				9C14B5F81B5D849100743D92 /* DetailsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				9C5A68BB1B6195DF006709BE /* BookRegisterView.m in Sources */,
+=======
 				D084DE0A1B61A6DF0041BDB3 /* ModeloLibro.m in Sources */,
+>>>>>>> origin/master
 				D084DDBD1B6045830041BDB3 /* Connect.m in Sources */,
 				9C14B5F71B5D849100743D92 /* DetailsView.m in Sources */,
 				9C14B5EF1B5D83DB00743D92 /* BookListViewViewController.m in Sources */,
