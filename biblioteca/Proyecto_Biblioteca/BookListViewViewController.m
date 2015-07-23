@@ -10,13 +10,24 @@
 
 @interface BookListViewViewController ()
 
+@property (strong, nonatomic) NSMutableArray *discos;
+
+@property (strong, nonatomic) NSMutableArray *dHistorial;
+
+//@property (strong, nonatomic) Utils *utils;
+
 @end
 
 @implementation BookListViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
+    //BOTON REGISTRO DE LIBRO
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showForm:)];
+    self.navigationItem.rightBarButtonItem = item;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P6C-gu-1h8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Inicio de sesión-->
@@ -95,9 +96,28 @@
                     <view key="view" contentMode="scaleToFill" id="EM5-Jd-hos">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="urF-SV-18w">
+                                <rect key="frame" x="16" y="64" width="568" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EM5-Jd-hos" id="CZe-x6-OVz"/>
+                                    <outlet property="delegate" destination="EM5-Jd-hos" id="Ub0-LU-gXq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="urF-SV-18w" firstAttribute="leading" secondItem="EM5-Jd-hos" secondAttribute="leadingMargin" id="ImN-2V-ann"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="urF-SV-18w" secondAttribute="trailing" id="ZVP-sO-a1f"/>
+                            <constraint firstItem="wJ4-hw-PhD" firstAttribute="top" secondItem="urF-SV-18w" secondAttribute="bottom" id="jWu-cL-TrD"/>
+                            <constraint firstItem="urF-SV-18w" firstAttribute="top" secondItem="LXG-LX-y36" secondAttribute="bottom" id="jmV-T8-eQT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Rx-f2-31k"/>
+                    <connections>
+                        <outlet property="tableView" destination="urF-SV-18w" id="7UC-3h-C5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqq-vl-uhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

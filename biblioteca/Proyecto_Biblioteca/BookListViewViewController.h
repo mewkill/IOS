@@ -11,6 +11,7 @@
 @interface BookListViewViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 

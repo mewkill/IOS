@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookListViewViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-4r-P87">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LLa-Lx-fCH"/>
+                        <outlet property="delegate" destination="-1" id="AQx-2z-jZc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ewd-4r-P87" secondAttribute="bottom" id="MLu-A8-cuA"/>
+                <constraint firstAttribute="trailing" secondItem="Ewd-4r-P87" secondAttribute="trailing" id="Say-aF-Bfz"/>
+                <constraint firstItem="Ewd-4r-P87" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nG1-06-XC6"/>
+                <constraint firstItem="Ewd-4r-P87" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tGy-JV-3oJ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
