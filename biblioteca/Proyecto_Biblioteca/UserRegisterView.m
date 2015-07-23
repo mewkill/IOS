@@ -7,6 +7,7 @@
 //
 
 #import "UserRegisterView.h"
+#import "Connect.h"
 
 @interface UserRegisterView ()
 
@@ -45,6 +46,9 @@
     else{
         if ([_txtPassword.text isEqualToString:_txtConfirmaPassword.text]) {
         
+            Connect *conectarWebService=[[Connect alloc] init];
+            
+            [conectarWebService registraUsuarios:_txtNombre.text usuario:_txtUsuario.text password:_txtPassword.text telefono:_txtTelefono.text email:_txtCorreo.text conecta:self];
             NSLog(@"Conciden");
         }
         else{

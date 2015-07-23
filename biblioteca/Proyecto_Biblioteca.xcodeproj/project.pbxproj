@@ -23,6 +23,7 @@
 		9C5A68BB1B6195DF006709BE /* BookRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A68B91B6195DF006709BE /* BookRegisterView.m */; };
 		9C5A68BC1B6195DF006709BE /* BookRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5A68BA1B6195DF006709BE /* BookRegisterView.xib */; };
 		D084DDBD1B6045830041BDB3 /* Connect.m in Sources */ = {isa = PBXBuildFile; fileRef = D084DDBC1B6045830041BDB3 /* Connect.m */; };
+		D084DE0A1B61A6DF0041BDB3 /* ModeloLibro.m in Sources */ = {isa = PBXBuildFile; fileRef = D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		9C5A68BA1B6195DF006709BE /* BookRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookRegisterView.xib; sourceTree = "<group>"; };
 		D084DDBB1B6045830041BDB3 /* Connect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connect.h; sourceTree = "<group>"; };
 		D084DDBC1B6045830041BDB3 /* Connect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connect.m; sourceTree = "<group>"; };
+		D084DE081B61A6DF0041BDB3 /* ModeloLibro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeloLibro.h; sourceTree = "<group>"; };
+		D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeloLibro.m; sourceTree = "<group>"; };
 		F2731CE2FB7F24D9A1E401EF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97F60254DE4D4300060727 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,9 +137,14 @@
 				9C14B5F91B5D899200743D92 /* UserRegisterView.h */,
 				9C14B5FA1B5D899200743D92 /* UserRegisterView.m */,
 				9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */,
+<<<<<<< HEAD
 				9C5A68B81B6195DF006709BE /* BookRegisterView.h */,
 				9C5A68B91B6195DF006709BE /* BookRegisterView.m */,
 				9C5A68BA1B6195DF006709BE /* BookRegisterView.xib */,
+=======
+				D084DE081B61A6DF0041BDB3 /* ModeloLibro.h */,
+				D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */,
+>>>>>>> origin/master
 			);
 			path = Proyecto_Biblioteca;
 			sourceTree = "<group>";
@@ -323,7 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				9C5A68BB1B6195DF006709BE /* BookRegisterView.m in Sources */,
+=======
+				D084DE0A1B61A6DF0041BDB3 /* ModeloLibro.m in Sources */,
+>>>>>>> origin/master
 				D084DDBD1B6045830041BDB3 /* Connect.m in Sources */,
 				9C14B5F71B5D849100743D92 /* DetailsView.m in Sources */,
 				9C14B5EF1B5D83DB00743D92 /* BookListViewViewController.m in Sources */,

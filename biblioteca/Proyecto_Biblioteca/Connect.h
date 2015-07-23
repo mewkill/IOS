@@ -14,5 +14,8 @@
 //-(void)login:(NSString *)user password:(NSString *)pass con:(UIViewController *)con;
 
 -(void) login:(NSString *)user password:(NSString *)pass conecta:(UIViewController *)con;
+-(void)registraUsuarios:(NSString *)nombre usuario:(NSString *)user  password:(NSString*)pwd  telefono:(NSString *)tel email:(NSString *)email conecta:(UIViewController *)con;
+
+-(void)GetListOfBook;
 
 @end
