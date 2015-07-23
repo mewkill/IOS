@@ -7,6 +7,7 @@
 //
 
 #import "BookListViewViewController.h"
+#import "Connect.h"
 
 @interface BookListViewViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    Connect *conexion = [[Connect alloc]init];
+    [conexion GetListOfBook];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -116,7 +116,8 @@
         NSError *jsonError = nil;
         NSArray *jsonArray = (NSArray *)[NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:&jsonError];
         
-     
+        NSLog(@"Response: %lu",(unsigned long)[jsonArray count]);
+
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
