@@ -20,10 +20,15 @@
     [super viewDidLoad];
     
     
-    //BOTON REGISTRAR LIBRO
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showForm:)];
+    NSNumber *usuario=[[NSUserDefaults standardUserDefaults] valueForKey:@"admin"];
+    
+    if (usuario.intValue == 0) {
+        //BOTON REGISTRAR LIBRO
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showForm:)];
+        
+        self.navigationItem.rightBarButtonItem = item;
 
-    self.navigationItem.rightBarButtonItem = item;
+    }
     
 
     
