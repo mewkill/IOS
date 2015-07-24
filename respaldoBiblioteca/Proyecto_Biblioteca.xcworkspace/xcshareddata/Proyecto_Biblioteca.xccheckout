@@ -14,7 +14,7 @@
 		<string>https://github.com/mewkill/IOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>biblioteca/Proyecto_Biblioteca.xcworkspace</string>
+	<string>respaldoBiblioteca/Proyecto_Biblioteca.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>44200FFE35ECC110042EDFB4C230C7259C089D69</key>

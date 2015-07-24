@@ -10,31 +10,31 @@
 	<string>Proyecto_Biblioteca</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0AB2C5B079208E2EF1333458E795A2DFA3930516</key>
-		<string>https://github.com/mewkill/Proyecto_Biblioteca.git</string>
+		<key>44200FFE35ECC110042EDFB4C230C7259C089D69</key>
+		<string>https://github.com/mewkill/IOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Proyecto_Biblioteca.xcodeproj</string>
+	<string>respaldoBiblioteca/Proyecto_Biblioteca.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0AB2C5B079208E2EF1333458E795A2DFA3930516</key>
-		<string>../..</string>
+		<key>44200FFE35ECC110042EDFB4C230C7259C089D69</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mewkill/Proyecto_Biblioteca.git</string>
+	<string>https://github.com/mewkill/IOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0AB2C5B079208E2EF1333458E795A2DFA3930516</string>
+	<string>44200FFE35ECC110042EDFB4C230C7259C089D69</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0AB2C5B079208E2EF1333458E795A2DFA3930516</string>
+			<string>44200FFE35ECC110042EDFB4C230C7259C089D69</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Proyecto_Biblioteca</string>
+			<string>IOS</string>
 		</dict>
 	</array>
 </dict>

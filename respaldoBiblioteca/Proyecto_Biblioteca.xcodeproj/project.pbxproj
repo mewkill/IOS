@@ -115,6 +115,7 @@
 		9C14B5C01B5D6CE200743D92 /* Proyecto_Biblioteca */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A68C21B628386006709BE /* MyModel */,
 				D084DDBA1B6045650041BDB3 /* Conect */,
 				9C14B5C51B5D6CE200743D92 /* AppDelegate.h */,
 				9C14B5C61B5D6CE200743D92 /* AppDelegate.m */,
@@ -132,8 +133,6 @@
 				9C14B5F91B5D899200743D92 /* UserRegisterView.h */,
 				9C14B5FA1B5D899200743D92 /* UserRegisterView.m */,
 				9C14B5FB1B5D899200743D92 /* UserRegisterView.xib */,
-				D084DE081B61A6DF0041BDB3 /* ModeloLibro.h */,
-				D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */,
 			);
 			path = Proyecto_Biblioteca;
 			sourceTree = "<group>";
@@ -162,6 +161,15 @@
 				9C14B5DC1B5D6CE200743D92 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C5A68C21B628386006709BE /* MyModel */ = {
+			isa = PBXGroup;
+			children = (
+				D084DE091B61A6DF0041BDB3 /* ModeloLibro.m */,
+				D084DE081B61A6DF0041BDB3 /* ModeloLibro.h */,
+			);
+			name = MyModel;
 			sourceTree = "<group>";
 		};
 		D084DDBA1B6045650041BDB3 /* Conect */ = {
