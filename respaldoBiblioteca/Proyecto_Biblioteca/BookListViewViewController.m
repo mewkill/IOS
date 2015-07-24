@@ -8,6 +8,7 @@
 
 #import "BookListViewViewController.h"
 #import "Connect.h"
+#import "BookRegisterView.h"
 
 @interface BookListViewViewController ()
 
@@ -18,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    //BOTON REGISTRAR LIBRO
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showForm:)];
+    self.navigationItem.rightBarButtonItem = item;
+    
     Connect *conexion = [[Connect alloc]init];
     [conexion GetListOfBook];
     
@@ -26,6 +32,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)showForm: (id) sender{
+    BookRegisterView *formBookRegister = [[BookRegisterView alloc]init];
+    
+    //formBookRegister.delegate = self;
+    
+    [self.navigationController pushViewController:formBookRegister animated:YES];
+    
 }
 
 

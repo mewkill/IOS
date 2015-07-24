@@ -139,7 +139,6 @@
 
 {
     
-    ViewController *login = [[ViewController alloc] initWithNibName:nil bundle:nil];
 
     
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://proyectobiblioteca.hol.es/"]];
@@ -200,17 +199,14 @@
 }
 
 
-@end
 
 
 
-
--(void)registraLibros:(NSString *)nombre usuario:(NSString *)user  password:(NSString*)pwd  telefono:(NSString *)tel email:(NSString *)email conecta:(UIViewController *)con
+-(void)registraLibros:(NSString *)titulo editorial:(NSString *)editorial  clasificacion:(NSString*)clasificacion  autor:(NSString *)autor paginas:(NSString *)paginas existencias:(NSString *)existencias descripcion:(NSString *)descripcion imagen:(NSString *)imagen conecta:(UIViewController *)con
 
 {
     
-    ViewController *login = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    
+        
     
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://proyectobiblioteca.hol.es/"]];
     
@@ -218,9 +214,9 @@
     
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"POST"
                                     
-                                                            path:@"http://proyectobiblioteca.hol.es/registraUsuario.php"
+                                                            path:@"http://proyectobiblioteca.hol.es/registroLibro.php"
                                     
-                                                      parameters:@{@"nombre":nombre,@"usuario":user,@"contrasena":pwd,@"telefono":tel,@"correo":email}];
+                                                      parameters:@{@"titulo":titulo,@"editorial":editorial,@"clasificacion":clasificacion,@"autor":autor,@"paginas":paginas,@"existencias":existencias,@"descripcion":descripcion,@"imagen":imagen}];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
@@ -237,18 +233,18 @@
         if([[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding] isEqualToString:@"registrado"]){
             
             
-            UIAlertView *registroSuccess=[[UIAlertView alloc]initWithTitle:@"Exito" message:@"Usuario Registrado Exitosamente" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *registroSuccess=[[UIAlertView alloc]initWithTitle:@"Exito" message:@"Libro Registrado Exitosamente" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [registroSuccess show];
             
             //[con.navigationController pushViewController:login animated:YES];
             
         }else if ([[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding] isEqualToString:@"existe"]){
-            UIAlertView *registroSuccess=[[UIAlertView alloc]initWithTitle:@"Error" message:@"El usuario ya esta registrado" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *registroSuccess=[[UIAlertView alloc]initWithTitle:@"Error" message:@"El libro ya existe" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [registroSuccess show];
             
             
         }else{
-            UIAlertView *registroSuccess=[[UIAlertView alloc]initWithTitle:@"Error" message:@"No pudo registrarse el usuario" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *registroSuccess=[[UIAlertView alloc]initWithTitle:@"Error" message:@"Error al registrar el libro" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             [registroSuccess show];
             
         }
