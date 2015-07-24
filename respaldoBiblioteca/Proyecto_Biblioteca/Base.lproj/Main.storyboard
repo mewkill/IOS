@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P6C-gu-1h8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Inicio de sesión-->
@@ -95,9 +96,28 @@
                     <view key="view" contentMode="scaleToFill" id="EM5-Jd-hos">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dqT-YH-PRI">
+                                <rect key="frame" x="16" y="64" width="568" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7G8-aH-oJf" id="YHO-My-IbB"/>
+                                    <outlet property="delegate" destination="7G8-aH-oJf" id="Oai-30-O1r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wJ4-hw-PhD" firstAttribute="top" secondItem="dqT-YH-PRI" secondAttribute="bottom" id="2aN-LE-NKn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dqT-YH-PRI" secondAttribute="trailing" id="g9r-Kw-65q"/>
+                            <constraint firstItem="dqT-YH-PRI" firstAttribute="leading" secondItem="EM5-Jd-hos" secondAttribute="leadingMargin" id="kXD-aX-mjj"/>
+                            <constraint firstItem="dqT-YH-PRI" firstAttribute="top" secondItem="LXG-LX-y36" secondAttribute="bottom" id="qmc-eW-dsS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Rx-f2-31k"/>
+                    <connections>
+                        <outlet property="tableView" destination="dqT-YH-PRI" id="iXl-IC-jRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqq-vl-uhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookListViewViewController : UIViewController
+@interface BookListViewViewController : UIViewController <UITableViewDataSource,UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 
