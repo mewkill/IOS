@@ -22,7 +22,10 @@
     
     //BOTON REGISTRAR LIBRO
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showForm:)];
+
     self.navigationItem.rightBarButtonItem = item;
+    
+
     
     Connect *conexion = [[Connect alloc]init];
     [conexion GetListOfBook];
